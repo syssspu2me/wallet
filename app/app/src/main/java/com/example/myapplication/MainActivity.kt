@@ -1,17 +1,21 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlin.android.synthetic.main_
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("WrongViewCast")
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
         setContentView(R.layout.activity_main)
 
-        button.setOnclickListener{ set_text("ok") }
-    }
-    fun set_text(str: String) {
-        costs.append(str)
+        val getinput = findViewById<Button>(R.id.getinput)
+        val editText = findViewById<EditText>(R.id.gettext)
+
     }
 }
